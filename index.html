@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Styles/styles.css" />
+    <script type="module" src="./JS/index.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">HANGMAN GAME</h1>
+    </header>
+    <main class="container">
+      <section id="lives"></section>
+      <section id="generated-word"></section>
+      <section id="user-input"></section>
+      <canvas id="canvas"></canvas>
+      <section id="letter-container" class="letter-container"></section>
+      <section id="new-game-container" class="new-game-popup hide">
+        <section id="result-text"></section>
+        <button id="new-game-button">New Game</button>
+      </section>
+      <section>
+        <button id="hintButton">Need a hint?</button>
+        <div id="hintPopup" class="hint-popup">
+          <span class="close">&times;</span>
+          <p>You can see the actual word in the console! 😏</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <h2>Developed By Amir and Erfan</h2>
+    </footer>
+  </body>
+</html>
